@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <!-- RelativeLayout muestra los elementos en posiciones relativas. La posición de cada uno puede especificarse como relativa a elementos equivalentes (como a la izquierda o por debajo de otro elemento) o en posiciones relativas al área RelativeLayout superior -->
+
+    <!-- layout_alignParentLeft="true" -> alinea el elemento por la izquierda con su elemento padre.
+     android:layout_marginLeft="37dp" -> es el margen que deja con el elemento padre -->
+
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <!-- android:layout_alignTop="@+id/imageViewAvatar" -> alinea el elemento por arriba con el elemento con ese id
+     android:layout_toEndOf="@+id/imageViewAvatar" y android:layout_toRightOf="@+id/imageViewAvatar" -> alinea el elemento por la izquierda con el elemento con ese id -->
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewAvatar"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageViewAvatar"
+        android:layout_toRightOf="@+id/imageViewAvatar"
+        android:text="TextView" />
+
+    <!-- android:layout_below="@+id/textViewTitulo" -> coloca el elemento debajo del elemento con ese id -->
+
+    <TextView
+        android:id="@+id/textViewModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/imageViewAvatar"
+        android:layout_toRightOf="@+id/imageViewAvatar"
+        android:text="TextView" />
+</RelativeLayout>

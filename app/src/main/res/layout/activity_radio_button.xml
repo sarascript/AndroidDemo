@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RadioButtonActivity">
+
+
+    <!-- ............................. RADIO BUTTON ............................. -->
+
+    <!-- Meter los Radio Button en un Radio Group para que sólo se pueda seleccionar una opción -->
+
+    <!-- Añadir el evento onClick con el mismo nombre en cada Radio Button -> android:onClick="generoClicked" -->
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:onClick="generoClicked"
+            android:id="@+id/radioButtonHombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:onClick="generoClicked"
+            android:id="@+id/radioButtonMujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+
+        <RadioButton
+            android:onClick="generoClicked"
+            android:id="@+id/radioButtonNoBinario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Binario" />
+
+    </RadioGroup>
+
+    <!-- Añadir el evento onClick -> android:onClick="conocerGeneroMarcado" -->
+
+    <Button
+        android:onClick="conocerGeneroMarcado"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Género" />
+
+</LinearLayout>
