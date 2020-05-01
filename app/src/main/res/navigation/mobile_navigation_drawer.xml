@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    // Contiene los fragments para cada sección seleccionada
+
+    // Fragment sección Home
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="es.sarascript.navigationdemo.ui.home.HomeFragmentDrawer"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_drawer" />
+
+    // Fragment sección Gallery
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="es.sarascript.navigationdemo.ui.gallery.GalleryFragmentDrawer"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery_drawer" />
+
+    // Fragment sección Slideshow
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="es.sarascript.navigationdemo.ui.slideshow.SlideshowFragmentDrawer"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow_drawer" />
+</navigation>

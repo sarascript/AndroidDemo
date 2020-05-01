@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    // ---------------------------- OPTION MENU -------------------------------
+
+        // Desde la vista de diseño añadimos un elemento Menu Item y le damos un id -> action_new_item
+
+        // Para cambiar el tipo de menú a toolbar le damos un icono al Menu Item
+        // Pulsamos en showAsAction y marcamos ifRoom
+
+    <item
+        android:id="@+id/action_new_item"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="New Item"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_search_item"
+        android:title="Search" />
+</menu>
