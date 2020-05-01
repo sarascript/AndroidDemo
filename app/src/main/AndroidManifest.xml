@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.sarascript.fragmentsdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DialogFragmentActivity"
+            android:label="@string/title_activity_dialog_fragment"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MultiscreenTabletActivity" />
+        <activity android:name=".MultiscreenActivity" />
+        <activity android:name=".ComunicacionActivity" />
+        <activity android:name=".FragmentListActivity" />
+        <activity
+            android:name=".DinamicFragmentsActivity"
+            android:label="@string/title_activity_dinamic_fragments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StaticFragmentsActivity" />
+    </application>
+
+</manifest>
