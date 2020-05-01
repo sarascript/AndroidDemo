@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridViewActivity">
+
+    // Creamos un elemento GridView, le ponemos un id, constrains y la propiedad -> android:numColumns="auto_fit"
+    // auto_fit hace que se generen el número de columnas según quepan en la pantalla
+
+    <GridView
+        android:id="@+id/gridViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </GridView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
